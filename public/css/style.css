@@ -4,26 +4,30 @@
     width: 100%;
 }
 
+body {
+      display: flex;
+    min-height: 100%;
+    flex-direction: column;
+     font-family: Bungee-inline;
+      position: relative
+}
+
 footer {
      background-image: url('../images/mcgeeHead.png');
     background-repeat: repeat;
     width: 100%;
-    height: 20px;
+    height: 50px;
+    position: absolute;
+     bottom: 0;
+     margin-top: 20px;
+ 
 }
 
 .card {
     border-radius: 15px;
 }
 
-body {
-      display: flex;
-    min-height: 100%;
-    flex-direction: column;
-    /* background-image: url('../images/mcgeeBodyBack.png');*/
-    /* background-size: cover;*/
-    /*background-repeat: repeat;*/
-     font-family: Bungee-inline;
-}
+
 
 #banner {
     margin-top: -1.2%;
@@ -89,8 +93,22 @@ nav {
 }
 
 #displayCard {
-    margin-left: -40%;
-  
+    margin-left: -52%;
+}
+
+.productImageMain {
+    width: 100%;
+    height: 195px;
+}
+
+#main {
+    margin-bottom: 10%;
+}
+
+#productInfo {
+    max-height: 600px;
+   overflow: auto;
+    position: scroll;
 }
 
 /*end large screens*/
@@ -137,11 +155,59 @@ nav {
   
 }
 
+#main {
+    margin-bottom: 30%;
+}
+
+.productImageMain {
+    width: 100%;
+    height: 280px;
+    margin-top: 5%;
+}
+
+#card1, #card2 {
+    width: 100%;
+    margin-top: 5%;
+}
 
 }
  
 
 
+/* ipads */
+
+/*  this is for tablets */
+@media screen and (max-width: 1025px) and (min-width: 901px) and (-webkit-min-device-pixel-ratio: 2){
+    
+    #productCard {
+    margin-right: -10%;
+}
+
+#displayCard {
+    margin-left: -10%;
+}
+
+#main {
+    margin-bottom: 20%
+}
+
+#mainFacility {
+    margin-bottom: 20%;
+  
+}
+
+
+}
+/*ipad pro*/
+@media screen and (max-width: 1366px) and (min-width: 1365px) and (-webkit-min-device-pixel-ratio: 2){
+    #main {
+    margin-bottom: 15%
+}
+
+#mainFacility {
+    margin-bottom: 20%;
+}
+}
 
 
 /*  this is for phones */
@@ -165,6 +231,8 @@ nav {
 
 #card1, #card2 {
     width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #menuButton {
@@ -197,7 +265,12 @@ nav {
   
 }
 
- 
+ .productImageMain {
+    width: 100%;
+    height: 280px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 }
 
 

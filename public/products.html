@@ -59,9 +59,9 @@
         
         <!--begin main area-->
         
-        <div class='row'>
+        <div class='row' id='main'>
             <!--begin left column-->
-            <div class='col l7 m7 s12'>
+            <div class='col l7 m12 s12'>
       
             <div class='card grey lighten-4' id='displayCard'>
                 <div class='card-content'>
@@ -70,26 +70,26 @@
              <div class='row'>
                  <div class='col l5 m5 s12'>
                      <!--type view-->
-                     <div id='typeView'>
+                    
                      <div class='row'>
                 <h4 class='red-text'>View Products By: <br>
-                <a class="waves-effect waves-light btn red darken-2">Type</a>
-                <a class="waves-effect waves-light btn red darken-2">Market</a>
+                <a id='type' class="waves-effect waves-light btn red darken-2">Type</a>
+                <a id='market' class="waves-effect waves-light btn red darken-2">Market</a>
                 </h4><br>
                 </div>
                    <div class='row'>
-           
+            <div id='typeView'>
               <div class='col l6 m6 s6'>
-                  <h4>Canopy Structures</h4>
+                  <h5>Canopy Structures</h5>
                   <ul>
                       <li><a id='petroleum' href='#'>Petroleum</a></li>
                       <li><a id='banking' href='#'>Banking/Financial Institutions</a></li>
-                      <li><a href='#'>Retail</a></li>
+                      <li><a id='retail' href='#'>Retail</a></li>
                   </ul>
                   <div class='col l6 m6 s6'>
-                  <h4>Building Components</h4>
+                  <h5>Building Components</h5>
                   <ul>
-                      <li><a href='#'>Miscellaneous</a></li>
+                      <li><a id='misc' href='#'>Miscellaneous</a></li>
                   </ul>
               </div>
                
@@ -98,18 +98,18 @@
                 </div>
                 <!--market view-->
                 <div id='marketView'>
-                    <h4>Petroleum Retailers</h4>
+                    <h5>Petroleum Retailers</h5>
                   <ul>
                       <li><a id='petroleum2' href='#'>Canopy Structures</a></li>
-                      <li><a href='#'>Building Components</a></li>
+                      <li><a id='misc2' href='#'>Building Components</a></li>
                   </ul>
-                  <h4>Banking/Financial Institutions</h4>
+                  <h5>Banking/Financial Institutions</h5>
                   <ul>
                       <li><a id='banking2' href='#'>Canopy Structures</a></li>
                   </ul>
-                  <h4>Retail Markets</h4>
+                  <h5>Retail Markets</h5>
                   <ul>
-                      <li><a href='#'>Canopy Structures</a></li>
+                      <li><a id='retail2' href='#'>Canopy Structures</a></li>
                   </ul>
                 </div>
                 </div>
@@ -125,7 +125,7 @@
             <!--end left column-->
             
             <!--begin left column-->
-            <div class='col l5 m5 s12'>
+            <div class='col l5 m12 s12'>
                
                     <div class='card grey lighten-4' id='productCard'>
                         <div class='card-content'>
@@ -147,6 +147,11 @@
                             
                         </div>
                     </div>
+                    
+                    <!--originally hidden images still hidden on small-->
+                    
+                    <img class='productImageMain' class='hide-on-med-and-down' src='./images/pet/pet14.jpg'>
+                    <img class='productImageMain' class='hide-on-med-and-down' src='./images/retail/retail4.jpg'>
                 </div>
            
             <!--end left column-->
@@ -156,7 +161,7 @@
         <!--end main area-->
         
         <!--footer-->
-        <footer>
+        <footer id='footer'>
             <!--something here eventually-->
         </footer>
         
