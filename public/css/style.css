@@ -1,0 +1,206 @@
+#header {
+    background-image: url('../images/mcgeeHead.png');
+    background-repeat: repeat;
+    width: 100%;
+}
+
+footer {
+     background-image: url('../images/mcgeeHead.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 20px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+body {
+      display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    /* background-image: url('../images/mcgeeBodyBack.png');*/
+    /* background-size: cover;*/
+    /*background-repeat: repeat;*/
+     font-family: Bungee-inline;
+}
+
+#banner {
+    margin-top: -1.2%;
+     background-image: url('../images/mcgeeBanner.png');
+     background-size: cover;
+     background-repeat: repeat;
+     color: white;
+     font-size: 22px;
+     width: 100%;
+}
+
+#signPic {
+    margin: 3%;
+    width: 90%;
+}
+
+nav {
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+
+#main1, #main3, #main5 {
+    padding: 1%;
+    width: 85%;
+    margin-left: 3%;
+}
+
+#main2, #main4{
+    width: 85%;
+    margin-left: 3%;
+}
+
+#globePic {
+    width: 60%;
+}
+
+#card1, #card2 {
+    width: 80%;
+}
+
+#row2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.director {
+    display: inline-block;
+    margin: 1%;
+    background: #f5f5f5;
+    width: 30%;
+    overflow-x: scroll;
+   
+}
+
+#facilityGal {
+    width: 60%;
+    margin-left: 10%;
+}
+
+#productCard {
+    margin-right: -40%;
+}
+
+#displayCard {
+    margin-left: -40%;
+  
+}
+
+/*end large screens*/
+
+
+
+/*  this is for tablets */
+@media screen and (max-width: 900px) and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2){
+    
+    #signPic {
+    margin: 3%;
+    width: 100%;
+    margin-top: 20%;
+}
+
+#banner {
+    margin-top: -2.5%;
+     font-size: 18px;
+}
+    
+    #globePic {
+    width: 40%;
+    margin-left: 30%;
+}
+
+#menuButton {
+    margin-top: -10%;
+}
+
+.director {
+    display: inline-block;
+    margin: 1%;
+    background: #f5f5f5;
+    width: 46%;
+    overflow-x: scroll;
+}
+
+#productCard {
+    margin-right: 0%;
+}
+
+#displayCard {
+    margin-left: 0%;
+  
+}
+
+
+}
+ 
+
+
+
+
+/*  this is for phones */
+@media screen and (max-width: 600px) and (min-width: 250px) and (-webkit-min-device-pixel-ratio: 2){
+ 
+ #main1, #main3, #main5 {
+    padding: 1%;
+    width: 100%;
+    margin-left: 0%;
+}
+
+#main2, #main4{
+    width: 100%;
+    margin-left: 0%;
+}
+
+#globePic {
+    width: 60%;
+    margin-left: 20%;
+}
+
+#card1, #card2 {
+    width: 100%;
+}
+
+#menuButton {
+    margin-top: -15%;
+}
+
+#banner {
+    margin-top: -4.5%;
+     font-size: 18px;
+}
+
+ #signPic {
+    margin: 3%;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: -0.5%;
+}
+
+.director {
+    width: 90%;
+    margin-left: 5%;
+}
+
+#productCard {
+    margin-right: 0%;
+}
+
+#displayCard {
+    margin-left: 0%;
+  
+}
+
+ 
+}
+
+
+
+
+

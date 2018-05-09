@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playball" rel="stylesheet">
+
+</head>
+
+<body>
+    
+   <!--header-->
+        <div class='row' id='header'>
+            <div class='col m12 l12 s12'>
+            <h4 style='margin-bottom: 2%; margin-left: 1%;'><span style='color: red;'>McGee</span><span style='color: grey;'> Corporation</span></h4>
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i id="menuButton" class="medium material-icons white-text right">menu</i></a>
+            </div>
+        </div>
+        <!--end header-->
+        
+        <!--begin banner-->
+        <div class='row' id='banner'>
+            <div class='col l6 m6 s12'>
+                <h2 style='margin-left: 15%; margin-top: 10%'>Our Products</h2>
+                
+            </div>
+             <div class='col l6 m6 s12'>
+                 <div class='container'>
+                     <img src='./images/mcgeeSign.jpg' id='signPic'>
+                 </div>
+             </div>
+        </div>
+        <!--end banner-->
+        
+        <!--nav-->
+            <nav class='hide-on-med-and-down'>
+    <div class="nav-wrapper white">
+      <ul style='margin-left: 3%;' class="left hide-on-med-and-down">
+        <li><a class='black-text' href="/index">Home</a></li>
+        <li class="active"><a class='black-text' href="/products">Products</a></li>
+        <li><a class='black-text' href="/facility">Facility</a></li>
+        <li><a class='black-text' href="/about">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+         <!--sidenav for mobile-->
+      <ul class='side-nav hide-on-large-only' id="slide-out">
+        <li><a class='black-text' href="/index">Home</a></li>
+        <li class="active"><a class='black-text' href="/products">Products</a></li>
+        <li><a class='black-text' href="/facility">Facility</a></li>
+        <li><a class='black-text' href="/about">About Us</a></li>
+      </ul>
+        <!--end nav-->
+        
+        <!--begin main area-->
+        
+        <div class='row'>
+            <!--begin left column-->
+            <div class='col l7 m7 s12'>
+      
+            <div class='card grey lighten-4' id='displayCard'>
+                <div class='card-content'>
+                    <!--<div id='product1' class='grey lighten-4'>-->
+               
+             <div class='row'>
+                 <div class='col l5 m5 s12'>
+                     <!--type view-->
+                     <div id='typeView'>
+                     <div class='row'>
+                <h4 class='red-text'>View Products By: <br>
+                <a class="waves-effect waves-light btn red darken-2">Type</a>
+                <a class="waves-effect waves-light btn red darken-2">Market</a>
+                </h4><br>
+                </div>
+                   <div class='row'>
+           
+              <div class='col l6 m6 s6'>
+                  <h4>Canopy Structures</h4>
+                  <ul>
+                      <li><a id='petroleum' href='#'>Petroleum</a></li>
+                      <li><a id='banking' href='#'>Banking/Financial Institutions</a></li>
+                      <li><a href='#'>Retail</a></li>
+                  </ul>
+                  <div class='col l6 m6 s6'>
+                  <h4>Building Components</h4>
+                  <ul>
+                      <li><a href='#'>Miscellaneous</a></li>
+                  </ul>
+              </div>
+               
+            </div>
+            </div>
+                </div>
+                <!--market view-->
+                <div id='marketView'>
+                    <h4>Petroleum Retailers</h4>
+                  <ul>
+                      <li><a id='petroleum2' href='#'>Canopy Structures</a></li>
+                      <li><a href='#'>Building Components</a></li>
+                  </ul>
+                  <h4>Banking/Financial Institutions</h4>
+                  <ul>
+                      <li><a id='banking2' href='#'>Canopy Structures</a></li>
+                  </ul>
+                  <h4>Retail Markets</h4>
+                  <ul>
+                      <li><a href='#'>Canopy Structures</a></li>
+                  </ul>
+                </div>
+                </div>
+                <!--div where we put the product info-->
+                <div class='col l7 m12 s12'>
+                    <div id='productInfo'></div>
+                   
+                </div>
+            </div>
+            </div>
+            </div>
+           </div>
+            <!--end left column-->
+            
+            <!--begin left column-->
+            <div class='col l5 m5 s12'>
+               
+                    <div class='card grey lighten-4' id='productCard'>
+                        <div class='card-content'>
+                            <h4 class='red-text'>Corporate Headquarters</h4>
+                            <div class='row'>
+                                <div class='col l6 m12 s12'>
+                                    <p> McGee Corporation<br>
+                                12701 East Independence Blvd. <br>
+                                P.O.Box 1375 <br>
+                                Matthews, NC 28106
+                                USA </p>
+                                </div>
+                                <div class='col l6 m12 s12'>
+                                    phone: 1-800-526-5589 <br>
+                                    fax: 1-704-882-3263 <br>
+                                    email: info@mcgeecorp.com<br>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+           
+            <!--end left column-->
+        </div>
+        
+        
+        <!--end main area-->
+        
+        <!--footer-->
+        <footer>
+            <!--something here eventually-->
+        </footer>
+        
+        
+        
+  <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
+    <script src='./js/products.js'></script>
+     <script>
+        $(document).ready(function() {
+            $('.modal').modal();
+            $('.collapsible').collapsible();
+            $(".button-collapse").sideNav();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+<!--this is copyrighted by josh jancula 2018 all rights reserved-->
