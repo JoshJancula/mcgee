@@ -9,7 +9,7 @@ body {
     min-height: 100%;
     flex-direction: column;
      font-family: Bungee-inline;
-      position: relative
+      position: relative;
 }
 
 footer {
@@ -111,6 +111,27 @@ nav {
     position: scroll;
 }
 
+img {
+    image-rendering: pixelated;
+}
+
+.carousel {
+    height: 230px;
+    width: 100%;
+}
+.carousel .carousel-item>img {
+    height: 230px;
+    width: 70%;
+}
+.carousel .carousel-item {
+ display: block;
+}
+
+/*.slides {*/
+/*    height: 150px;*/
+/*    width: 300px;*/
+/*}*/
+
 /*end large screens*/
 
 
@@ -181,6 +202,7 @@ nav {
     margin-left: 0%;
 }
 
+
 }
  
 
@@ -215,6 +237,7 @@ nav {
     width: 100%;
     margin-top: 5%;
 }
+
 
 
 }
@@ -301,8 +324,5 @@ nav {
 }
 
 }
-
-
-
-
+ 
 
