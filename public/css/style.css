@@ -111,9 +111,6 @@ nav {
     position: scroll;
 }
 
-img {
-    image-rendering: pixelated;
-}
 
 .carousel {
     height: 230px;
@@ -220,11 +217,12 @@ img {
 }
 
 #main {
-    margin-bottom: 20%
+    margin-bottom: 23%
 }
 
 #mainFacility {
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 40%;
 }
 
 #globePic {
@@ -238,7 +236,9 @@ img {
     margin-top: 5%;
 }
 
-
+#main1 {
+    font-size: 22px;
+}
 
 }
 /*ipad pro*/
@@ -250,6 +250,7 @@ img {
 #mainFacility {
     margin-bottom: 20%;
 }
+
 }
 
 

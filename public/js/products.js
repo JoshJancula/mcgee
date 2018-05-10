@@ -176,7 +176,7 @@ $(document).ready(function() {
 
             "<div class='card dynamicCard'>" + "<div class='card-content'>" +
             "<h4>" + product.name + "</h4>" + "<h6>" + product.target + "</h6>"+
-            "<p style='font-size: 12px;'>" + product.info + "</p><br>" +
+            "<p id='productTitle' style='font-size: 12px;'>" + product.info + "</p><br>" +
             "<button data-target='gallery' class='btn modal-trigger view red darken-2'  id='" + product.button + "'>View Gallery</button>" +
             "</div>"
         );
@@ -188,7 +188,9 @@ $(document).ready(function() {
          $('.carousel.carousel-slider').carousel({fullWidth: true});
     }
     
-    
+    function spy(id) {
+    return 'a[href="#' + id + '"]';
+  }
     
     var int;
     var carousel_interval = 3500;
@@ -206,21 +208,20 @@ $(document).ready(function() {
     
 function getPics(product) {
     $('#carouselDiv').empty()
-    let carousel = $("<div class='carousel carousel-slider'>"); //create brand new carousel div element //MISSED '
+    let carousel = $("<div class='carousel carousel-slider'>"); //create brand new carousel div element
     $("#carouselDiv").append(carousel);
     let images = product.images
     images.forEach(function(result, index) {
         let pic = result.link;
-        console.log("pic: " + pic)
-        let newImage = $("<a class='carousel-item' href='#"+index +"'>").append(
+        let newImage = $("<a class='carousel-item' href='#"+ index +"'>").append(
             "<img src='" + pic + "' class='productImage'></a>"
         );
          carousel.append(newImage);
-       setTimeout(()=>{
-          carouselInit();
-       }, 200); 
-    });
       
+    });
+     setTimeout(()=>{
+          carouselInit();
+       }, 200);   
    
 }
 
@@ -229,6 +230,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[0]);
+       setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#petroleum2").on("click", function(event) {
@@ -236,6 +240,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[0]);
+         setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#banking").on("click", function(event) {
@@ -244,6 +251,9 @@ function getPics(product) {
         event.preventDefault();
         getPics(products[1]);
         getInfo(products[1]);
+         setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#banking2").on("click", function(event) {
@@ -251,6 +261,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[1]);
+         setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#misc").on("click", function(event) {
@@ -258,6 +271,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[3]);
+         setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#misc2").on("click", function(event) {
@@ -265,6 +281,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[3]);
+         setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#retail").on("click", function(event) {
@@ -272,6 +291,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[2]);
+        setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#retail2").on("click", function(event) {
@@ -279,6 +301,9 @@ function getPics(product) {
         document.getElementById("displayCard").style.marginLeft = "0%";
         event.preventDefault();
         getInfo(products[2]);
+         setTimeout(()=>{
+         location.hash = "#productTitle";
+       }, 200);  
     });
 
     $("#market").on("click", function(event) {
