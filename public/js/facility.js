@@ -1,3 +1,6 @@
+$(document).ready(function() {
+    
+
 var images =  [
                 {
                     link: "./images/facility/01.jpg"
@@ -129,7 +132,6 @@ function getPics(pics) {
  $(document).on("click", "#facilityGal", function(event) {
         event.preventDefault();
         getPics(images);
-        $('#gallery').show();
         autoPlay();
     });
     
@@ -157,3 +159,11 @@ function getPics(pics) {
        $('.carousel').carousel('next');
        autoPlay()
     });
+    
+   
+    
+   
+    
+ 
+  
+})

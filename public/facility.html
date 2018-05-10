@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
@@ -97,7 +99,7 @@
                         </div>
                     </div>
                     <!-- Modal Trigger -->
-              <a style='margin-bottom: 15%;' id='facilityGal' class="waves-effect waves-light btn red darken-2 modal-trigger" href="#gallery">Gallery</a>
+              <button style='margin-bottom: 15%;' id='facilityGal' class="waves-effect waves-light btn red darken-2 modal-trigger" href='#gallery'>Gallery</button>
                 </div>
            
             <!--end left column-->
@@ -115,8 +117,6 @@
      <!-- Modal Structure -->
     <div id="gallery" class="modal">
         <div class="modal-content center">
-            <div class='col l2 m2 s2'><i id="close" class="small material-icons black-text right">close</i></a></div>
-            <br>
             <div id='carouselDiv'></div>
         </div>
         <div class="modal-footer">
@@ -133,19 +133,14 @@
     <!--end modal-->
         
         
-  <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
-    <script src='./js/facility.js'
+  
+    <script src='./js/facility.js'></script>
      <script>
         $(document).ready(function() {
-            $('.modal').modal({
-                dismissible: true,
-            });
+            $('.modal').modal({ });
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
         });
-        
-     
     </script>
 
 
