@@ -307,7 +307,7 @@ function getPics(product) {
 
     $("#market").on("click", function(event) {
         if (screenWidth > 1025) {
-            document.getElementById("displayCard").style.height = "800px";
+            document.getElementById("displayCard").style.height = "900px";
         }
         document.getElementById("productCard").style.marginRight = "0%";
         document.getElementById("displayCard").style.marginLeft = "0%";
@@ -323,7 +323,7 @@ function getPics(product) {
 
     $("#type").on("click", function(event) {
          if (screenWidth > 1025) {
-            document.getElementById("displayCard").style.height = "800px";
+            document.getElementById("displayCard").style.height = "900px";
         }
         document.getElementById("productCard").style.marginRight = "0%";
         document.getElementById("displayCard").style.marginLeft = "0%";
