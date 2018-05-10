@@ -5,8 +5,7 @@ $(document).ready(function() {
     $(".productImageMain").hide();
     $('#footer').hide();
     var screenWidth = window.innerWidth;
-
-
+   
     var products = [{
             name: "Petroleum",
             button: "petGal",
@@ -308,7 +307,7 @@ function getPics(product) {
 
     $("#market").on("click", function(event) {
         if (screenWidth > 1025) {
-            document.getElementById("displayCard").style.height = "700px";
+            document.getElementById("displayCard").style.height = "800px";
         }
         document.getElementById("productCard").style.marginRight = "0%";
         document.getElementById("displayCard").style.marginLeft = "0%";
@@ -324,7 +323,7 @@ function getPics(product) {
 
     $("#type").on("click", function(event) {
          if (screenWidth > 1025) {
-            document.getElementById("displayCard").style.height = "700px";
+            document.getElementById("displayCard").style.height = "800px";
         }
         document.getElementById("productCard").style.marginRight = "0%";
         document.getElementById("displayCard").style.marginLeft = "0%";
