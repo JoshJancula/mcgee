@@ -112,28 +112,37 @@
         </footer>
         
         
-        <!-- Modal Structure -->
-  <div id="gallery" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+     <!-- Modal Structure -->
+    <div id="gallery" class="modal">
+        <div class="modal-content center">
+            <div class='col l2 m2 s2'><i id="close" class="small material-icons black-text right">close</i></a></div>
+            <br>
+            <div id='carouselDiv'></div>
+        </div>
+        <div class="modal-footer">
+            <div class='row'>
+                <div class='col l2 m2 s2'></div>
+                <div class='col l2 m2 s2'><i id="prev" class="small material-icons black-text center">chevron_left</i></a></div>
+                <div class='col l2 m2 s2'> <i id="pause" class="small material-icons black-text center">pause</i></a></div>
+                <div class='col l2 m2 s2'><i id="play" class="small material-icons black-text center">play_arrow</i></a></div>
+                <div class='col l2 m2 s2'><i id="next" class="small material-icons black-text center">chevron_right</i></a></div>
+                <div class='col l2 m2 s2'></div>
+            </div>
+        </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+    <!--end modal-->
         
         
   <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
-    
+    <script src='./js/facility.js'
      <script>
         $(document).ready(function() {
-            $('.modal').modal();
+            $('.modal').modal({
+                dismissible: true,
+            });
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
-            $('.scrollspy').scrollSpy();
-        
         });
         
      
