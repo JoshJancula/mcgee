@@ -82,21 +82,19 @@
                             </div>
                             <div class='row'>
                                 <div id='typeView'>
-                                    <!--<div class='col l6 m6 s6'>-->
+                                  
                                         <h5>Canopy Structures</h5>
                                         <ul>
                                             <li><a id='petroleum' href='#'>Petroleum</a></li>
                                             <li><a id='banking' href='#'>Banking/Financial Institutions</a></li>
                                             <li><a id='retail' href='#'>Retail</a></li>
                                         </ul>
-                                        <!--<div class='col l6 m6 s6'>-->
+                                       
                                             <h5>Building Components</h5>
                                             <ul>
                                                 <li><a id='misc' href='#'>Miscellaneous</a></li>
                                             </ul>
-                                        <!--</div>-->
-
-                                    <!--</div>-->
+                                      
                                 </div>
                             </div>
                             <!--market view-->
@@ -138,7 +136,7 @@
                             <p> McGee Corporation<br> 12701 East Independence Blvd. <br> P.O.Box 1375 <br> Matthews, NC 28106 USA </p>
                         </div>
                         <div class='col l6 m12 s12'>
-                            phone: 1-800-526-5589 <br> fax: 1-704-882-3263 <br> email: info@mcgeecorp.com<br>
+                            phone: 1-800-526-5589 <br> fax: 1-704-882-3263 <br> email: <a class="contactModal waves-effect waves-light modal-trigger" data-id='info@mcgeecorp.com' href="#contactModal">info@mcgeecorp.com</a>
                         </div>
                     </div>
 
@@ -179,21 +177,51 @@
 
     <!--footer-->
     <footer id='footer'>
-        <!--something here eventually-->
+       <p class='grey-text'>McGee Corporation Website version 3.0 By Josh Jancula </p>
     </footer>
 
+    <!-- contact modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <div class="row">
+          <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="phone" type="text">
+          <label for="phone">Phone #</label>
+        </div>
+      </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+         <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">Message</label>
+        </div>
+        <input id="toEmail" type="hidden">
+      </div>
+      </div>
+    <div class='row center'>
+     <a href="#!" id='submitMessage' class="btn red darken-2 white-text modal-close waves-effect waves-red btn-flat">Submit</a>
+    </div>
+    </div>
+  </div>
 
     <script>
         $(document).ready(function() {
-            $('.modal').modal();
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
             $('.scrollspy').scrollSpy();
-            
         });
     </script>
 
     <script src='./js/products.js'></script>
+    <script src='./js/message.js'></script>
 </body>
 
 </html>

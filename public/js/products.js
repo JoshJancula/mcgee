@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    console.log("JS")
+    
+     $('#gallery').modal({});
+
+    
     $("#typeView").hide();
     $("#marketView").hide();
     $(".productImageMain").hide();
