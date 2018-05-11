@@ -17,7 +17,6 @@ $(document).ready(function() {
    
   // A function for handling what happens when the form to create a new message
   function handleFormSubmit(event) {
-       console.log("submit button was pressed")
     var receiver = $("#toEmail").text();
     var bodyInput = $("#message").val().trim();
     var nameInput = $("#name").val().trim();
@@ -27,6 +26,7 @@ $(document).ready(function() {
     event.preventDefault();
     // Don't submit unless the form is complete...... they don't have to give phone#
     if (!nameInput || !emailInput || !bodyInput) {
+     $('#pleaseComplete').modal('open');
       return;
     }
     // Constructing a newMessage
@@ -46,6 +46,7 @@ $(document).ready(function() {
     $("#email").val("");
     $("#phone").val("");
     $('#contactModal').modal('close');
+    $('#thankYou').modal('open');
   }
 
 
